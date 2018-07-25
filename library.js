@@ -84,6 +84,29 @@ brianFour = new Brianpokemon(350);
 brianFive = new Brianpokemon(367);
 brianSix = new Brianpokemon(423);
 
+
 Stef = new Trainer(stefStuff)
 Karl = new Trainer(karlStuff)
 Brian = new Trainer(brianStuff)
+
+function iChooseyou(id){
+  document.getElementById('pokename').innerHTML = teamStef[id].name;
+  let pokeHp = teamStef[id].stats[5].base_stat;
+  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
+  let pokeAtk = teamStef[id].stats[4].base_stat;
+  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
+  let pokeDef = teamStef[id].stats[3].base_stat;
+  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
+  let pokeMove = teamStef[id].moves[0].move.name.toUpperCase();
+  let pokeMove2 = teamStef[id].moves[1].move.name.toUpperCase();
+  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+}
+
+trainerTaunt = {
+  sOne: 'Hi! I like shorts! They’re comfy and easy to wear!',
+  sTwo: 'Whenever I’m feeling down after losing a battle, I just think, ‘At least I’ve still got my shorts!',
+  bOne: 'Poke Balls are round! The world is also round!',
+  bTwo: 'Win or lose, Poke Balls remain round!',
+  kOne: 'Hmm. This is difficult. I was greedy and bought a lot of swimsuits but now I cant pick which one to wear.',
+  kTwo: 'images/' + 'haunter.png',
+}
