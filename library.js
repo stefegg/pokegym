@@ -90,7 +90,7 @@ Karl = new Trainer(karlStuff)
 Brian = new Trainer(brianStuff)
 
 function karlChooseyou(id){
-  document.getElementById('pokename0').innerHTML = karlStuff[id].name;
+  document.getElementById('pokename0').innerHTML = karlStuff[id].name.toUpperCase();
   let pokeHp = karlStuff[id].stats[5].base_stat;
   document.getElementById('pokehp0').innerHTML = `Hit Points: ${pokeHp}`;
   let pokeAtk = karlStuff[id].stats[4].base_stat;
@@ -103,7 +103,7 @@ function karlChooseyou(id){
 };
 
 function brianChooseyou(id){
-  document.getElementById('pokename1').innerHTML = brianStuff[id].name;
+  document.getElementById('pokename1').innerHTML = brianStuff[id].name.toUpperCase();
   let pokeHp = brianStuff[id].stats[5].base_stat;
   document.getElementById('pokehp1').innerHTML = `Hit Points: ${pokeHp}`;
   let pokeAtk = brianStuff[id].stats[4].base_stat;
@@ -116,7 +116,7 @@ function brianChooseyou(id){
 };
 
 function stefChooseyou(id){
-  document.getElementById('pokename2').innerHTML = stefStuff[id].name;
+  document.getElementById('pokename2').innerHTML = stefStuff[id].name.toUpperCase();
   let pokeHp = stefStuff[id].stats[5].base_stat;
   document.getElementById('pokehp2').innerHTML = `Hit Points: ${pokeHp}`;
   let pokeAtk = stefStuff[id].stats[4].base_stat;
@@ -130,72 +130,92 @@ function stefChooseyou(id){
 
 function kPkmn1(){
   karlChooseyou(0);
+  document.getElementById('karlpokePic').src ="images/121.png";
 };
 
 function kPkmn2(){
   karlChooseyou(1);
+  document.getElementById('karlpokePic').src ="images/222.png";
 };
 
 function kPkmn3(){
   karlChooseyou(2);
+  document.getElementById('karlpokePic').src ="images/366.png";
 };
 
 function kPkmn4(){
   karlChooseyou(3);
+  document.getElementById('karlpokePic').src ="images/689.png";
 };
 
 function kPkmn5(){
   karlChooseyou(4);
+  document.getElementById('karlpokePic').src ="images/748.png";
 };
 
 function kPkmn6(){
   karlChooseyou(5);
+  document.getElementById('karlpokePic').src ="images/771.png";
 };
 
 function bPkmn1(){
   brianChooseyou(0);
+  document.getElementById('brianpokePic').src ="images/130.png";
 };
 
 function bPkmn2(){
   brianChooseyou(1);
+  document.getElementById('brianpokePic').src ="images/131.png";
 };
 
 function bPkmn3(){
   brianChooseyou(2);
+  document.getElementById('brianpokePic').src ="images/134.png";
 };
 
 function bPkmn4(){
   brianChooseyou(3);
+  document.getElementById('brianpokePic').src ="images/350.png";
 };
 
 function bPkmn5(){
   brianChooseyou(4);
+  document.getElementById('brianpokePic').src ="images/367.png";
 };
 
 function bPkmn6(){
   brianChooseyou(5);
+  document.getElementById('brianpokePic').src ="images/423.png";
 };
 
 function sPkmn1(){
   stefChooseyou(0);
+  document.getElementById('stefpokePic').src ="images/160.png";
 };
 
 function sPkmn2(){
   stefChooseyou(1);
+  document.getElementById('stefpokePic').src ="images/224.png";
 };
 
 function sPkmn3(){
   stefChooseyou(2);
+  document.getElementById('stefpokePic').src ="images/230.png";
+
 };
 
 function sPkmn4(){
   stefChooseyou(3);
+  document.getElementById('stefpokePic').src ="images/319.png";
 };
 
 function sPkmn5(){
   stefChooseyou(4);
+  document.getElementById('stefpokePic').src ="images/565.png";
+
 };
 
 function sPkmn6(){
   stefChooseyou(5);
+  document.getElementById('stefpokePic').src ="images/693.png";
 };
