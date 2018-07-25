@@ -3,9 +3,9 @@ var ticking = false;
   // var ticking = true;
 
   trainerTaunt = {
-    sT: 'Hi! I like shorts! They’re comfy and easy to wear! Whenever I’m feeling down after losing a battle, I just think, ‘At least I’ve still got my shorts!',
-    bT: 'Poke Balls are round! The world is also round! Win or lose, Poke Balls remain round!',
-    kT: 'Hmm. This is difficult. I was greedy and bought a lot of swimsuits but now I cant pick which one to wear.',
+    sT: 'Stef: Hi! I like shorts! They’re comfy and easy to wear! Whenever I’m feeling down after losing a battle, I just think, ‘At least I’ve still got my shorts!',
+    bT: 'Brian: Poke Balls are round! The world is also round! Win or lose, Poke Balls remain round!',
+    kT: 'Karl: Hmm. This is difficult. I was greedy and bought a lot of swimsuits but now I cant pick which one to wear.',
   }
 
   function dramaticReveal(scroll_pos) {
