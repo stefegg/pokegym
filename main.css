@@ -9,11 +9,19 @@ body {
   font-family: 'ABeeZee', sans-serif;
 }
 
+.banner {
+  height: 200px;
+  background-image: url("images/gyrados-banner.png");
+  background-position: center;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
 .trainer-box {
   background: linear-gradient(transparent, rgba(116, 139, 175, 0.7), transparent);
   /* background-color: ); */
   padding: 10px;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -35,9 +43,13 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
   margin: 15px;
-  color: #15305b;
+  /* color: #15305b; */
   border-radius: 15px;
   box-shadow: 4px 4px 10px black;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pokestatsbox {
@@ -45,7 +57,7 @@ body {
   width: 500px;
   padding: 15px;
   margin: 0;
-  color: #15305b;
+  /* color: #15305b; */
   border-radius: 15px;
   box-shadow: 4px 4px 10px black;
 }
