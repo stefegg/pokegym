@@ -12,6 +12,8 @@ body {
   padding: 10px;
   height: 600px;
   overflow: hidden;
+display: grid;
+justify-content: space-between;
 }
 
 
@@ -32,7 +34,6 @@ body {
 .tauntbox {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  min-width: 500px;
   padding: 15px;
   margin: 0;
 }
@@ -40,7 +41,6 @@ body {
 .pokestatsbox {
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    min-width: 500px;
     padding: 15px;
     margin: 0;
 }
