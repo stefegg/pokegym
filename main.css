@@ -6,11 +6,45 @@ body {
   background-color: lavender;
   padding: 10px;
   height: 600px;
+  overflow: hidden;
 }
+
 
 .pokeball {
   height: 20px;
   width: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+.pokeballsbox{
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.tauntbox {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  min-width: 500px;
+  padding: 15px;
+  margin: 0;
+}
+
+.pokestatsbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    min-width: 500px;
+    padding: 15px;
+    margin: 0;
+}
+
+.trainerpic {
+display: grid;
+}
+
+.trainerpic img {
+  max-width: 400px;
+
 }
