@@ -6,21 +6,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-font-family: 'ABeeZee', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 .trainer-box {
-  background: linear-gradient(transparent, rgba(123, 184, 162, 0.6));
+  background: linear-gradient(transparent, rgba(116, 139, 175, 0.7), transparent);
   /* background-color: ); */
   padding: 10px;
   height: 600px;
   overflow: hidden;
 }
 
-
 .pokeball {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -28,49 +27,54 @@ font-family: 'ABeeZee', sans-serif;
 .pokeballsbox {
   width: 500px;
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-
+  align-items: center;
+  justify-content: space-around;
 }
 
 .tauntbox {
-  background-color: rgba(255, 255, 255, 0.8);
-
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
-  margin: 15px;;
+  margin: 15px;
+  color: #15305b;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px black;
 }
 
 .pokestatsbox {
-    background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   width: 500px;
+  padding: 15px;
+  margin: 0;
+  color: #15305b;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px black;
+}
 
-    padding: 15px;
-    margin: 0;
-    color: steelblue;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px black;
+.pokeimgbox {
+  position: relative;
+  top: -50px;
+}
 
+.pokeimgbox img {
+  max-width: 500px;
 }
 
 .pokestatsbox h1 {
   padding: 0 10px 0px 10px;
   font-size: 1.2em;
-
 }
 
 .pokestatsbox p {
   padding: 0 10px 0px 10px;
   font-size: 0.8em;
-
 }
 
 .trainerpic {
-display: grid;
+  display: grid;
 }
 
 .trainerpic img {
   max-width: 400px;
-
 }
 
 .hidden {
@@ -85,25 +89,45 @@ display: grid;
   opacity: 1;
 }
 
-
 .pokeball {
   animation: bounce 1.5s;
   animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
-
-0% { transform: translateY(-1px); }
-10% { transform: translateY(-2px); }
-20% { transform: translateY(-3px); }
-30% { transform: translateY(-4px); }
-40% { transform: translateY(-5px); }
-50% { transform: translateY(-4px); }
-60% { transform: translateY(-3px); }
-70% { transform: translateY(-2px); }
-80% { transform: translateY(-1px); }
-90% { transform: translateY(0px); }
-100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(-1px);
+  }
+  10% {
+    transform: translateY(-2px);
+  }
+  20% {
+    transform: translateY(-3px);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  70% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-1px);
+  }
+  90% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .trainerpic:active {
@@ -112,22 +136,44 @@ display: grid;
 }
 
 @keyframes shake {
-  0% { transform: translate(10px, 10px) rotate(0deg); }
-  10% { transform: translate(-10px, -20px) rotate(-1deg); }
-  20% { transform: translate(-30px, 0px) rotate(1deg); }
-  30% { transform: translate(30px, 20px) rotate(0deg); }
-  40% { transform: translate(10px, -10px) rotate(1deg); }
-  50% { transform: translate(-10px, 20px) rotate(-1deg); }
-  60% { transform: translate(-30px, 10px) rotate(0deg); }
-  70% { transform: translate(3px, 10px) rotate(-1deg); }
-  80% { transform: translate(-10px, -10px) rotate(1deg); }
-  90% { transform: translate(10px, 20px) rotate(0deg); }
-  100% { transform: translate(10px, -20px) rotate(-1deg); }
+  0% {
+    transform: translate(10px, 10px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-10px, -20px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-30px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(30px, 20px) rotate(0deg);
+  }
+  40% {
+    transform: translate(10px, -10px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-10px, 20px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-30px, 10px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 10px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-10px, -10px) rotate(1deg);
+  }
+  90% {
+    transform: translate(10px, 20px) rotate(0deg);
+  }
+  100% {
+    transform: translate(10px, -20px) rotate(-1deg);
+  }
 }
 
 .pokeball:hover {
-animation: initial;
-transform: translateY(1px) rotate(45deg) scale(1.3, 1.3);
+  animation: initial;
+  transform: translateY(1px) rotate(45deg) scale(1.3, 1.3);
 }
 
 .pokestatsbox:hover {
