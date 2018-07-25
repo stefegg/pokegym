@@ -6,7 +6,7 @@ body {
   background-color: lavender;
   padding: 10px;
   height: 600px;
-  overflow: hidden;
+  /* overflow: hidden; */ /*I turned this off for taunt to diplay*/
 }
 
 
