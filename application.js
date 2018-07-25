@@ -16,6 +16,7 @@ var ticking = false;
       content = document.getElementById('trainer1');
       content.classList.remove('hidden');
       content.classList.add('revealed');
+        document.getElementById("tauntArea1").innerHTML = trainerTaunt.kT;
     }
     revealContent()
   }
@@ -25,6 +26,7 @@ var ticking = false;
       content = document.getElementById('trainer2');
       content.classList.remove('hidden');
       content.classList.add('revealed');
+        document.getElementById("tauntArea2").innerHTML = trainerTaunt.bT;
     }
     revealContent2()
   }
