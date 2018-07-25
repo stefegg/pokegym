@@ -199,11 +199,3 @@ function sPkmn5(){
 function sPkmn6(){
   stefChooseyou(5);
 };
-
-trainerTaunt = {
-  sOne: 'Hi! I like shorts! They’re comfy and easy to wear!',
-  sTwo: 'Whenever I’m feeling down after losing a battle, I just think, ‘At least I’ve still got my shorts!',
-  bOne: 'Poke Balls are round! The world is also round!',
-  bTwo: 'Win or lose, Poke Balls remain round!',
-  kOne: 'Hmm. This is difficult. I was greedy and bought a lot of swimsuits but now I cant pick which one to wear.',
-}
