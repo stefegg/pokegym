@@ -90,44 +90,115 @@ Karl = new Trainer(karlStuff)
 Brian = new Trainer(brianStuff)
 
 function karlChooseyou(id){
-  document.getElementById('pokename').innerHTML = karlStuff[id].name;
+  document.getElementById('pokename0').innerHTML = karlStuff[id].name;
   let pokeHp = karlStuff[id].stats[5].base_stat;
-  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
+  document.getElementById('pokehp0').innerHTML = `Hit Points: ${pokeHp}`;
   let pokeAtk = karlStuff[id].stats[4].base_stat;
-  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
+  document.getElementById('pokeattack0').innerHTML = `Attack: ${pokeAtk}`;
   let pokeDef = karlStuff[id].stats[3].base_stat;
-  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
+  document.getElementById('pokedefense0').innerHTML = `Defense: ${pokeDef}`;
   let pokeMove = karlStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = karlStuff[id].moves[1].move.name.toUpperCase();
-  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+  document.getElementById('pokemoves0').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 };
 
 function brianChooseyou(id){
-  document.getElementById('pokename').innerHTML = brianStuff[id].name;
+  document.getElementById('pokename1').innerHTML = brianStuff[id].name;
   let pokeHp = brianStuff[id].stats[5].base_stat;
-  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
+  document.getElementById('pokehp1').innerHTML = `Hit Points: ${pokeHp}`;
   let pokeAtk = brianStuff[id].stats[4].base_stat;
-  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
+  document.getElementById('pokeattack1').innerHTML = `Attack: ${pokeAtk}`;
   let pokeDef = brianStuff[id].stats[3].base_stat;
-  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
+  document.getElementById('pokedefense1').innerHTML = `Defense: ${pokeDef}`;
   let pokeMove = brianStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = brianStuff[id].moves[1].move.name.toUpperCase();
-  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+  document.getElementById('pokemoves1').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 };
 
 function stefChooseyou(id){
-  document.getElementById('pokename').innerHTML = stefStuff[id].name;
+  document.getElementById('pokename2').innerHTML = stefStuff[id].name;
   let pokeHp = stefStuff[id].stats[5].base_stat;
-  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
+  document.getElementById('pokehp2').innerHTML = `Hit Points: ${pokeHp}`;
   let pokeAtk = stefStuff[id].stats[4].base_stat;
-  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
+  document.getElementById('pokeattack2').innerHTML = `Attack: ${pokeAtk}`;
   let pokeDef = stefStuff[id].stats[3].base_stat;
-  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
+  document.getElementById('pokedefense2').innerHTML = `Defense: ${pokeDef}`;
   let pokeMove = stefStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = stefStuff[id].moves[1].move.name.toUpperCase();
-  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+  document.getElementById('pokemoves2').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 };
 
+function kPkmn1(){
+  karlChooseyou(0);
+};
+
+function kPkmn2(){
+  karlChooseyou(1);
+};
+
+function kPkmn3(){
+  karlChooseyou(2);
+};
+
+function kPkmn4(){
+  karlChooseyou(3);
+};
+
+function kPkmn5(){
+  karlChooseyou(4);
+};
+
+function kPkmn6(){
+  karlChooseyou(5);
+};
+
+function bPkmn1(){
+  brianChooseyou(0);
+};
+
+function bPkmn2(){
+  brianChooseyou(1);
+};
+
+function bPkmn3(){
+  brianChooseyou(2);
+};
+
+function bPkmn4(){
+  brianChooseyou(3);
+};
+
+function bPkmn5(){
+  brianChooseyou(4);
+};
+
+function bPkmn6(){
+  brianChooseyou(5);
+};
+
+function sPkmn1(){
+  stefChooseyou(0);
+};
+
+function sPkmn2(){
+  stefChooseyou(1);
+};
+
+function sPkmn3(){
+  stefChooseyou(2);
+};
+
+function sPkmn4(){
+  stefChooseyou(3);
+};
+
+function sPkmn5(){
+  stefChooseyou(4);
+};
+
+function sPkmn6(){
+  stefChooseyou(5);
+};
 
 trainerTaunt = {
   sOne: 'Hi! I like shorts! They’re comfy and easy to wear!',
