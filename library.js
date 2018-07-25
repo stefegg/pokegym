@@ -6,7 +6,7 @@ karlStuff = [];
 class Stefpokemon {
 	constructor(pokemon){
       this.pokemon = pokemon;
-		axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}/`)
+		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/${this.pokemon}.json`)
 		.then((response) => {
         pokeStuff = response.data;
         stefStuff.push(pokeStuff);
@@ -20,7 +20,7 @@ class Stefpokemon {
 class Karlpokemon {
 	constructor(pokemon){
       this.pokemon = pokemon;
-		axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}/`)
+		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/${this.pokemon}.json`)
 		.then((response) => {
         pokeStuff = response.data;
         karlStuff.push(pokeStuff);
@@ -34,7 +34,7 @@ class Karlpokemon {
 class Brianpokemon {
 	constructor(pokemon){
       this.pokemon = pokemon;
-		axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}/`)
+		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/${this.pokemon}.json`)
 		.then((response) => {
         pokeStuff = response.data;
         brianStuff.push(pokeStuff);
@@ -65,11 +65,11 @@ stefOne = new Stefpokemon(160);
 stefTwo = new Stefpokemon(693);
 stefThree = new Stefpokemon(230);
 stefFour = new Stefpokemon(319);
-stefFive = new Stefpokemon(656);
+stefFive = new Stefpokemon(565);
 stefSix = new Stefpokemon(224);
 
 
-karlOne : new Karlpokemon(748);
+karlOne : new Karlpokemon(747);
 karlTwo : new Karlpokemon(222);
 karlThree : new Karlpokemon(689);
 karlFour : new Karlpokemon(366);
