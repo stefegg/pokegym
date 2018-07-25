@@ -1,10 +1,7 @@
 body {
   width: 100%;
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.7), black), url("http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg");
-  background-position: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   font-family: 'ABeeZee', sans-serif;
 }
@@ -37,13 +34,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .tauntbox {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(204, 223, 255, 0.7);
   padding: 15px;
   margin: 15px;
-  /* color: #15305b; */
+  color: rgb(1, 21, 56);
   border-radius: 15px;
   box-shadow: 4px 4px 10px black;
   width: 500px;
@@ -53,11 +52,11 @@ body {
 }
 
 .pokestatsbox {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(204, 223, 255, 0.7);
   width: 500px;
   padding: 15px;
   margin: 0;
-  /* color: #15305b; */
+  color: rgb(1, 21, 56);
   border-radius: 15px;
   box-shadow: 4px 4px 10px black;
 }
