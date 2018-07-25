@@ -5,13 +5,21 @@ function dramaticReveal(scroll_pos) {
   scroll_pos = last_known_scroll_position;
   // var ticking = true;
 
+  function typestefText() { //show and display are both keywords, hence 'type'
+      if (i < trainerTaunt.sT.length) {
+      document.getElementById("tauntArea3").innerHTML += trainerTaunt.sT.charAt(i) +trainerTaunt.sT.slice(1);
+      i++;
+      setTimeout(typeTrainerText, speed);
+    }
+  }
+
+  var i = 0;
+  var speed = 35;
 
   trainerTaunt = {
-    sOne: 'Hi! I like shorts! They’re comfy and easy to wear!',
-    sTwo: 'Whenever I’m feeling down after losing a battle, I just think, ‘At least I’ve still got my shorts!',
-    bOne: 'Poke Balls are round! The world is also round!',
-    bTwo: 'Win or lose, Poke Balls remain round!',
-    kOne: 'Hmm. This is difficult. I was greedy and bought a lot of swimsuits but now I cant pick which one to wear.',
+    sT: 'Hi! I like shorts! They’re comfy and easy to wear! Whenever I’m feeling down after losing a battle, I just think, ‘At least I’ve still got my shorts!',
+    bT: 'Poke Balls are round! The world is also round! Win or lose, Poke Balls remain round!',
+    kT: 'Hmm. This is difficult. I was greedy and bought a lot of swimsuits but now I cant pick which one to wear.',
   }
 
   if (scroll_pos > 0) {
@@ -39,6 +47,7 @@ function dramaticReveal(scroll_pos) {
       content.classList.add('revealed');
     }
     revealContent3()
+    typestefText()
   }
 
 }
