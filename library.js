@@ -6,7 +6,7 @@ karlStuff = [];
 class Stefpokemon {
 	constructor(pokemon){
       this.pokemon = pokemon;
-		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/${this.pokemon}.json`)
+		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/jsons/${this.pokemon}.json`)
 		.then((response) => {
         pokeStuff = response.data;
         stefStuff.push(pokeStuff);
@@ -20,7 +20,7 @@ class Stefpokemon {
 class Karlpokemon {
 	constructor(pokemon){
       this.pokemon = pokemon;
-		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/${this.pokemon}.json`)
+		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/jsons/${this.pokemon}.json`)
 		.then((response) => {
         pokeStuff = response.data;
         karlStuff.push(pokeStuff);
@@ -34,7 +34,7 @@ class Karlpokemon {
 class Brianpokemon {
 	constructor(pokemon){
       this.pokemon = pokemon;
-		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/${this.pokemon}.json`)
+		axios.get(`https://raw.githubusercontent.com/stefegg/pokegym/master/jsons/${this.pokemon}.json`)
 		.then((response) => {
         pokeStuff = response.data;
         brianStuff.push(pokeStuff);
