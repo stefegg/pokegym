@@ -150,7 +150,7 @@ function kPkmn4(){
 
 function kPkmn5(){
   karlChooseyou(4);
-  document.getElementById('karlpokePic').src ="images/748.png";
+  document.getElementById('karlpokePic').src ="images/747.png";
 };
 
 function kPkmn6(){
