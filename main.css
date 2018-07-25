@@ -48,3 +48,15 @@ display: grid;
   max-width: 400px;
 
 }
+
+.hidden {
+  opacity: 0;
+  transition: opacity;
+  transition-duration: 2s;
+}
+
+.revealed {
+  transition: opacity;
+  transition-duration: 2s;
+  opacity: 1;
+}
