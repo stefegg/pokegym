@@ -6,13 +6,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+font-family: 'ABeeZee', sans-serif;
 }
 
 .trainer-box {
-  background-color: rgba(123, 184, 162, 0.3);
+  background: linear-gradient(transparent, rgba(123, 184, 162, 0.6));
+  /* background-color: ); */
   padding: 10px;
   height: 600px;
-  /* overflow: hidden; */ /*I turned this off for taunt to diplay*/
+  overflow: hidden;
 }
 
 
@@ -23,37 +25,41 @@ body {
   cursor: pointer;
 }
 
-.pokeballsbox{
-  width: 100%;
+.pokeballsbox {
+  width: 500px;
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
+
 }
 
 .tauntbox {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  min-width: 500px;
+
   padding: 15px;
-  margin: 0;
+  margin: 15px;;
 }
 
 .pokestatsbox {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    min-width: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+  width: 500px;
+
     padding: 15px;
     margin: 0;
+    color: steelblue;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px black;
+
 }
 
 .pokestatsbox h1 {
-  padding: 10px;
+  padding: 0 10px 0px 10px;
   font-size: 1.2em;
 
 }
 
 .pokestatsbox p {
-  padding: 10px;
+  padding: 0 10px 0px 10px;
   font-size: 0.8em;
 
 }
