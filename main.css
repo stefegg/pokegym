@@ -7,6 +7,10 @@ body {
   font-weight: bold;
 }
 
+h1 {
+  font-family: 'Trade Winds', cursive;
+}
+
 .banner {
   height: 200px;
   background-image: url("images/gyrados-banner.png");
@@ -47,7 +51,14 @@ body {
   border-radius: 15px;
   box-shadow: 4px 4px 10px black;
   width: 500px;
-padding: 40px 40px 10px 40px;
+
+  padding: 40px 40px 10px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tillana', cursive;
+
 }
 
 
