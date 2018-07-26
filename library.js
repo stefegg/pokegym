@@ -100,6 +100,8 @@ function karlChooseyou(id){
   let pokeMove = karlStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = karlStuff[id].moves[1].move.name.toUpperCase();
   document.getElementById('pokemoves0').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+	var audio = document.getElementById("audio");
+	audio.play();
 };
 
 function brianChooseyou(id){
@@ -113,6 +115,8 @@ function brianChooseyou(id){
   let pokeMove = brianStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = brianStuff[id].moves[1].move.name.toUpperCase();
   document.getElementById('pokemoves1').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+	var audio = document.getElementById("audio");
+	audio.play();
 };
 
 function stefChooseyou(id){
@@ -126,6 +130,8 @@ function stefChooseyou(id){
   let pokeMove = stefStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = stefStuff[id].moves[1].move.name.toUpperCase();
   document.getElementById('pokemoves2').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+	var audio = document.getElementById("audio");
+	audio.play();
 };
 
 function kPkmn1(){
@@ -186,6 +192,8 @@ function bPkmn5(){
 function bPkmn6(){
   brianChooseyou(5);
   document.getElementById('brianpokePic').src ="images/423.png";
+	var audio = document.getElementById("audio");
+  audio.play();
 };
 
 function sPkmn1(){
