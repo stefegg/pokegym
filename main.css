@@ -337,3 +337,22 @@ body {
   transform: scale(1.05, 1.05);
   transition-duration: 1s;
 }
+
+.experiment {
+  position: absolute;
+  top:250px;
+  left:48vw;
+  background-image: url("http://pixeljoint.com/files/icons/water2__r1510345901.png");
+background-repeat: repeat-y;
+height: 2200px;
+background-size: 50px;
+}
+
+
+.trainer {
+    position: fixed;
+    left: 48vw;
+    top: 250px;
+  width: 50px;
+
+}
