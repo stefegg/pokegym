@@ -18,26 +18,68 @@ function dramaticReveal(scroll_pos) {
       content.classList.remove('hidden');
       content.classList.add('revealed');
       document.getElementById("tauntArea1").innerHTML = trainerTaunt.kT;
+
+      setTimeout(function() {
+        document.getElementById('karlpic').classList.remove('hidden');
+        document.getElementById('karlpic').classList.add('animated');
+        document.getElementById('karlpic').classList.add('lightSpeedIn');
+      }, 1000);
+
+      setTimeout(function() {
+        document.getElementById('taunt1').classList.remove('hidden');
+        document.getElementById('taunt1').classList.add('animated');
+        document.getElementById('taunt1').classList.add('bounceIn');
+      }, 2000);
+
+
     }
     revealContent()
   }
 
-  if (scroll_pos >= 600) {
+  if (scroll_pos >= 650) {
     function revealContent2() {
       content = document.getElementById('trainer2');
-      content.classList.remove('hidden');
+
       content.classList.add('revealed');
       document.getElementById("tauntArea2").innerHTML = trainerTaunt.bT;
+
+      setTimeout(function() {
+        document.getElementById('brianpic').classList.remove('hidden');
+        document.getElementById('brianpic').classList.add('animated');
+        document.getElementById('brianpic').classList.add('bounceInUp');
+      }, 1000);
+
+      setTimeout(function() {
+        document.getElementById('taunt2').classList.remove('hidden');
+        document.getElementById('taunt2').classList.add('animated');
+        document.getElementById('taunt2').classList.add('bounceIn');
+      }, 2000);
+
+
     }
     revealContent2()
   }
 
-  if (scroll_pos > 1500) {
+  if (scroll_pos > 1600) {
     function revealContent3() {
       content = document.getElementById('trainer3');
       content.classList.remove('hidden');
       content.classList.add('revealed');
       document.getElementById("tauntArea3").innerHTML = trainerTaunt.sT;
+
+      setTimeout(function() {
+        document.getElementById('stefpic').classList.remove('hidden');
+        document.getElementById('stefpic').classList.add('animated');
+        document.getElementById('stefpic').classList.add('zoomInLeft');
+      }, 1000);
+
+      setTimeout(function() {
+        document.getElementById('taunt3').classList.remove('hidden');
+        document.getElementById('taunt3').classList.add('animated');
+        document.getElementById('taunt3').classList.add('bounceIn');
+      }, 2000);
+
+
     }
     revealContent3()
 
