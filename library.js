@@ -89,7 +89,8 @@ Stef = new Trainer(stefStuff)
 Karl = new Trainer(karlStuff)
 Brian = new Trainer(brianStuff)
 
-function karlChooseyou(id){
+function kPkmn(id){
+	this.id = id;
   document.getElementById('pokename0').innerHTML = karlStuff[id].name.toUpperCase();
   let pokeHp = karlStuff[id].stats[5].base_stat;
   document.getElementById('pokehp0').innerHTML = `Hit Points: ${pokeHp}`;
@@ -100,11 +101,14 @@ function karlChooseyou(id){
   let pokeMove = karlStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = karlStuff[id].moves[1].move.name.toUpperCase();
   document.getElementById('pokemoves0').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+	let image = id;
+	document.getElementById('karlpokePic').src =`kimages/${image}.png`;
 	var audio = document.getElementById("audio");
 	audio.play();
 };
 
-function brianChooseyou(id){
+function bPkmn(id){
+	this.id = id;
   document.getElementById('pokename1').innerHTML = brianStuff[id].name.toUpperCase();
   let pokeHp = brianStuff[id].stats[5].base_stat;
   document.getElementById('pokehp1').innerHTML = `Hit Points: ${pokeHp}`;
@@ -115,11 +119,14 @@ function brianChooseyou(id){
   let pokeMove = brianStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = brianStuff[id].moves[1].move.name.toUpperCase();
   document.getElementById('pokemoves1').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+	let image = id;
+	document.getElementById('brianpokePic').src =`bimages/${image}.png`;
 	var audio = document.getElementById("audio");
 	audio.play();
 };
 
-function stefChooseyou(id){
+function sPkmn(id){
+	this.id = id;
   document.getElementById('pokename2').innerHTML = stefStuff[id].name.toUpperCase();
   let pokeHp = stefStuff[id].stats[5].base_stat;
   document.getElementById('pokehp2').innerHTML = `Hit Points: ${pokeHp}`;
@@ -130,100 +137,8 @@ function stefChooseyou(id){
   let pokeMove = stefStuff[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = stefStuff[id].moves[1].move.name.toUpperCase();
   document.getElementById('pokemoves2').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
+	let image = id;
+	document.getElementById('stefpokePic').src =`simages/${image}.png`;
 	var audio = document.getElementById("audio");
 	audio.play();
-};
-
-function kPkmn1(){
-  karlChooseyou(0);
-  document.getElementById('karlpokePic').src ="images/121.png";
-};
-
-function kPkmn2(){
-  karlChooseyou(1);
-  document.getElementById('karlpokePic').src ="images/222.png";
-};
-
-function kPkmn3(){
-  karlChooseyou(2);
-  document.getElementById('karlpokePic').src ="images/366.png";
-};
-
-function kPkmn4(){
-  karlChooseyou(3);
-  document.getElementById('karlpokePic').src ="images/689.png";
-};
-
-function kPkmn5(){
-  karlChooseyou(4);
-  document.getElementById('karlpokePic').src ="images/747.png";
-};
-
-function kPkmn6(){
-  karlChooseyou(5);
-  document.getElementById('karlpokePic').src ="images/771.png";
-};
-
-function bPkmn1(){
-  brianChooseyou(0);
-  document.getElementById('brianpokePic').src ="images/130.png";
-};
-
-function bPkmn2(){
-  brianChooseyou(1);
-  document.getElementById('brianpokePic').src ="images/131.png";
-};
-
-function bPkmn3(){
-  brianChooseyou(2);
-  document.getElementById('brianpokePic').src ="images/134.png";
-};
-
-function bPkmn4(){
-  brianChooseyou(3);
-  document.getElementById('brianpokePic').src ="images/350.png";
-};
-
-function bPkmn5(){
-  brianChooseyou(4);
-  document.getElementById('brianpokePic').src ="images/367.png";
-};
-
-function bPkmn6(){
-  brianChooseyou(5);
-  document.getElementById('brianpokePic').src ="images/423.png";
-	var audio = document.getElementById("audio");
-  audio.play();
-};
-
-function sPkmn1(){
-  stefChooseyou(0);
-  document.getElementById('stefpokePic').src ="images/160.png";
-};
-
-function sPkmn2(){
-  stefChooseyou(1);
-  document.getElementById('stefpokePic').src ="images/224.png";
-};
-
-function sPkmn3(){
-  stefChooseyou(2);
-  document.getElementById('stefpokePic').src ="images/319.png";
-
-};
-
-function sPkmn4(){
-  stefChooseyou(3);
-  document.getElementById('stefpokePic').src ="images/321.png";
-};
-
-function sPkmn5(){
-  stefChooseyou(4);
-  document.getElementById('stefpokePic').src ="images/565.png";
-
-};
-
-function sPkmn6(){
-  stefChooseyou(5);
-  document.getElementById('stefpokePic').src ="images/693.png";
 };
