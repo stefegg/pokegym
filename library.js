@@ -103,7 +103,7 @@ function kPkmn(id){
   document.getElementById('pokemoves0').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 	let image = id;
 	document.getElementById('karlpokePic').src =`kimages/${image}.png`;
-	var audio = document.getElementById("audio");
+		var audio = document.getElementById("audio");
 	audio.play();
 };
 
