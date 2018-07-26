@@ -33,7 +33,7 @@ h1 {
 .bannerafter {
   /* filter: blur(400px); */
   filter:brightness(0);
-  height: 10px;
+  height:0px;
   background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
   background-position: center;
   background-size: cover;
