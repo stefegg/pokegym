@@ -25,6 +25,12 @@ function dramaticReveal(scroll_pos) {
         document.getElementById('karlpic').classList.add('lightSpeedIn');
       }, 1000);
 
+      setTimeout(function() {
+        document.getElementById('taunt1').classList.remove('hidden');
+        document.getElementById('taunt1').classList.add('animated');
+        document.getElementById('taunt1').classList.add('bounceIn');
+      }, 2000);
+
 
     }
     revealContent()
@@ -42,6 +48,14 @@ function dramaticReveal(scroll_pos) {
         document.getElementById('brianpic').classList.add('animated');
         document.getElementById('brianpic').classList.add('bounceInUp');
       }, 1000);
+
+      setTimeout(function() {
+        document.getElementById('taunt2').classList.remove('hidden');
+        document.getElementById('taunt2').classList.add('animated');
+        document.getElementById('taunt2').classList.add('bounceIn');
+      }, 2000);
+
+
     }
     revealContent2()
   }
@@ -52,11 +66,20 @@ function dramaticReveal(scroll_pos) {
       content.classList.remove('hidden');
       content.classList.add('revealed');
       document.getElementById("tauntArea3").innerHTML = trainerTaunt.sT;
+
       setTimeout(function() {
         document.getElementById('stefpic').classList.remove('hidden');
         document.getElementById('stefpic').classList.add('animated');
         document.getElementById('stefpic').classList.add('zoomInLeft');
       }, 1000);
+
+      setTimeout(function() {
+        document.getElementById('taunt3').classList.remove('hidden');
+        document.getElementById('taunt3').classList.add('animated');
+        document.getElementById('taunt3').classList.add('bounceIn');
+      }, 2000);
+
+
     }
     revealContent3()
 
