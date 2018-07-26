@@ -1,8 +1,9 @@
 body {
   width: 100%;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), black), url("https://wallpapercave.com/wp/LxohbUQ.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+
+  /* background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.7), black), url("http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg"); */
+  /* background-attachment: fixed; */
+
   color: white;
   font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
@@ -11,6 +12,12 @@ body {
 .bannerbefore {
   height: 100vh;
   background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
+
+h1 {
+  font-family: 'Trade Winds', cursive;
+}
+
+
   background-position: center;
   background-size: cover;
   opacity: 0.9;
@@ -103,9 +110,12 @@ body {
   color: white;
   box-shadow: 4px 4px 10px black;
   width: 500px;
+
   margin: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px
+     font-family: 'Tillana', cursive;
+
 }
 
 .tauntbox h1 {
@@ -214,8 +224,23 @@ body {
 
 .revealed {
   transition: opacity;
+
   transition-duration: 3.5s;
-  opacity: 1;
+  opacity: .9;
+}
+
+.pokeball {
+  animation: bounce 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#bgVid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
 }
 
 @keyframes bounce {
