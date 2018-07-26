@@ -11,13 +11,7 @@ body {
 
 .bannerbefore {
   height: 100vh;
-  background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
-
-h1 {
-  font-family: 'Trade Winds', cursive;
-}
-
-
+  background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.7), black), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.9;
@@ -28,12 +22,12 @@ h1 {
   flex-direction: column;
   text-shadow: 3px 3px 3px black;
   transition-duration: 2s;
+  font-family: 'Trade Winds';
 }
 
 .bannerafter {
   /* filter: blur(400px); */
-  filter:brightness(0);
-  height:0px;
+  height:100px;
   background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
   background-position: center;
   background-size: cover;
@@ -46,6 +40,7 @@ h1 {
   transition-duration: 2s;
   text-shadow: 3px 3px 3px black;
   box-shadow: 3px 0px 3px black;
+    font-family: 'Trade Winds';
 }
 
 .bannerbutton {
@@ -113,7 +108,7 @@ h1 {
 
   margin: 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px
+  border-bottom-left-radius: 20px;
      font-family: 'Tillana', cursive;
 
 }
