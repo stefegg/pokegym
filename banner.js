@@ -28,6 +28,8 @@ window.addEventListener('scroll', function(e) {
 
 });
 
+//this forces reload at start! weee
+
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }

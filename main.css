@@ -1,15 +1,16 @@
 body {
   width: 100%;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), black), url("http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg");
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), black), url("https://wallpapercave.com/wp/LxohbUQ.jpg");
   background-attachment: fixed;
+  background-size: cover;
   color: white;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
 }
 
 .bannerbefore {
   height: 100vh;
-  background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("images/gyrados-banner.png");
+  background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.9;
@@ -23,9 +24,10 @@ body {
 }
 
 .bannerafter {
-  /* filter: blur(40px); */
-  height: 100px;
-  background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("images/gyrados-banner.png");
+  /* filter: blur(400px); */
+  filter:brightness(0);
+  height: 10px;
+  background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.9;
@@ -40,8 +42,8 @@ body {
 }
 
 .bannerbutton {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: rgb(147, 172, 234, 0.9);
   box-shadow: 7px 7px 7px black;
@@ -49,7 +51,7 @@ body {
   border-color: white;
   border-width: 5px;
   background-image: url("https://fsmedia.imgix.net/d6/cd/bc/3e/13ca/45a3/b843/e1b151dc63ef/tumblrnn0lv3epsp1tqptlzo1540gif.gif");
-  background-position: -20px 7px;
+  background-position: -13px 3px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -73,7 +75,6 @@ body {
   padding: 10px;
   height: 800px;
   /* overflow: hidden; */
-
 }
 
 .pokeball {
@@ -92,6 +93,9 @@ body {
   justify-content: space-around;
   padding-left: 50px;
   padding-right: 50px;
+  background-image: url("https://maxcdn.icons8.com/Share/icon/ultraviolet/Editing/horizontal_line1600.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .tauntbox {
@@ -108,25 +112,28 @@ body {
   height: 100%;
   font-size: 1.4em;
   padding: 20px;
-  background-color: rgb(50, 87, 145, 0.9);
+  background-color: rgb(17, 49, 99, 0.9);
   margin: 0;
-  color:#d8e7ff;
+  color: #d8e7ff;
   display: flex;
   align-items: center;
   border-top-right-radius: 20px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .tauntbox p {
-  padding:20px;
+  padding: 20px;
 }
 
 .pokeimgbox {
   position: relative;
   top: -50px;
+    z-index: 1;
 }
 
 .pokeimgbox img {
   max-width: 500px;
+
 }
 
 .pokestatsbox {
@@ -136,19 +143,25 @@ body {
   color: white;
   box-shadow: 4px 4px 10px black;
   display: grid;
-   grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 'aa bb cc dd' 'aa ee ee ee';
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 5px 20px 5px;
+  position: relative;
+  z-index: 5;
 }
 
 .pokestatsbox h1 {
   height: 100%;
   font-size: 1.3em;
   padding: 10px;
-  background-color: rgb(50, 87, 145, 0.9);
+  background-color: rgb(17, 49, 99, 0.9);
   margin: 0;
-  color:#d8e7ff;
+  color: #d8e7ff;
   display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 5px 0px 0px 20px;
 }
 
 .aa {
@@ -166,14 +179,14 @@ body {
 .dd {
   grid-area: dd;
 }
+
 .ee {
   grid-area: ee;
 }
 
-
 .pokestatsbox p {
   padding: 10px;
-  margin:0;
+  margin: 0;
   font-size: 0.8em;
   display: flex;
   align-items: center;
@@ -201,7 +214,7 @@ body {
 
 .revealed {
   transition: opacity;
-  transition-duration: 2s;
+  transition-duration: 3.5s;
   opacity: 1;
 }
 
@@ -284,7 +297,7 @@ body {
 
 .pokeball:hover {
   animation: initial;
-  transform: translateY(-5px) rotate(45deg) scale(1.3, 1.3);
+  transform: translateY(-15px) rotate(45deg) scale(1.3, 1.3);
 }
 
 .pokestatsbox:hover {
