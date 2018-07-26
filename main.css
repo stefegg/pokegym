@@ -82,7 +82,7 @@ body {
   width: 40px;
   transition-duration: 0.4s;
   cursor: pointer;
-  animation: bounce 1.5s;
+  animation: bouncey 1.5s;
   animation-iteration-count: infinite;
 }
 
@@ -226,7 +226,7 @@ body {
 }
 
 .pokeball {
-  animation: bounce 1.5s;
+  animation: bouncey 1.5s;
   animation-iteration-count: infinite;
 }
 
@@ -239,7 +239,7 @@ body {
   opacity: 1;
 }
 
-@keyframes bounce {
+@keyframes bouncey {
   0% {
     transform: translateY(-1px);
   }
