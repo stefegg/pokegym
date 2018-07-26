@@ -99,7 +99,7 @@ body {
 }
 
 .tauntbox {
-  background-color: rgb(204, 223, 255, 0.3);
+  background-color: rgb(68, 92, 130, 0.5);
   color: white;
   box-shadow: 4px 4px 10px black;
   width: 500px;
@@ -138,7 +138,7 @@ body {
 }
 
 .pokestatsbox {
-  background-color: rgb(204, 223, 255, 0.3);
+  background-color: rgb(68, 92, 130, 0.3);
   width: 500px;
   margin: 0;
   color: white;
@@ -193,7 +193,7 @@ body {
 .pokestatsbox p {
   padding: 10px;
   margin: 0;
-  font-size: 0.8em;
+  font-size: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
