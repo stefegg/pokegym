@@ -94,3 +94,7 @@ window.addEventListener('scroll', function(e) {
   }
 
 });
+
+function remove(y){
+  y.className = '';
+};

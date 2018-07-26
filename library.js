@@ -104,8 +104,10 @@ function kPkmn(id){
 	let image = id;
 	let y = document.getElementById('karlpokePic');
 	y.src =`kimages/${image}.png`;
-	y.classList.add('animated');
+	y.classList.remove('animated');
+	y.classList.remove('zoomIn');
 	void y.offsetWidth;
+	y.classList.add('animated');
 	y.classList.add('zoomIn');
 	var audio = document.getElementById("audio");
 	audio.play();
@@ -126,10 +128,11 @@ function bPkmn(id){
 	let image = id;
 	let y = document.getElementById('brianpokePic');
 	y.src =`bimages/${image}.png`;
-	y.classList.add('animated');
+	y.classList.remove('animated');
+	y.classList.remove('zoomIn');
 	void y.offsetWidth;
+	y.classList.add('animated');
 	y.classList.add('zoomIn');
-
 	var audio = document.getElementById("audio");
 	audio.play();
 };
@@ -149,8 +152,10 @@ function sPkmn(id){
 	let image = id;
 	let y = document.getElementById('stefpokePic');
 	y.src =`simages/${image}.png`;
-	y.classList.add('animated');
+	y.classList.remove('animated');
+	y.classList.remove('zoomIn');
 	void y.offsetWidth;
+	y.classList.add('animated');
 	y.classList.add('zoomIn');
 	var audio = document.getElementById("audio");
 	audio.play();
