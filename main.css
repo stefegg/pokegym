@@ -1,9 +1,9 @@
+
+
 body {
   width: 100%;
-
   /* background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.7), black), url("http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg"); */
   /* background-attachment: fixed; */
-
   color: white;
   font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
@@ -27,7 +27,7 @@ body {
 
 .bannerafter {
   /* filter: blur(400px); */
-  height:100px;
+  height: 100px;
   background-image: radial-gradient(transparent, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)), url("http://pre05.deviantart.net/c9f6/th/pre/i/2013/128/4/6/gyarados_whose_that_pokemon_wallpaper_by_jhr921-d64l4ew.jpg");
   background-position: center;
   background-size: cover;
@@ -40,7 +40,7 @@ body {
   transition-duration: 2s;
   text-shadow: 3px 3px 3px black;
   box-shadow: 3px 0px 3px black;
-    font-family: 'Trade Winds';
+  font-family: 'Trade Winds';
 }
 
 .bannerbutton {
@@ -72,11 +72,9 @@ body {
 }
 
 .trainer-box {
-  background: linear-gradient(transparent, rgba(116, 139, 175, 0.3), transparent);
-  /* background-color: ); */
+  background: linear-gradient(transparent, rgb(102, 160, 255, 0.4), transparent);
   padding: 10px;
   height: 800px;
-  /* overflow: hidden; */
 }
 
 .pokeball {
@@ -105,17 +103,15 @@ body {
   color: white;
   box-shadow: 4px 4px 10px black;
   width: 500px;
-
   margin: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-     font-family: 'Tillana', cursive;
-
+  font-family: 'Tillana', cursive;
 }
 
 .tauntbox h1 {
   height: 100%;
-  font-size: 1.4em;
+  font-size: 1.7em;
   padding: 20px;
   background-color: rgb(17, 49, 99, 0.9);
   margin: 0;
@@ -123,7 +119,8 @@ body {
   display: flex;
   align-items: center;
   border-top-right-radius: 20px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Tillana', cursive;
+  font-weight: bold;
 }
 
 .tauntbox p {
@@ -133,12 +130,11 @@ body {
 .pokeimgbox {
   position: relative;
   top: -50px;
-    z-index: 1;
+  z-index: 1;
 }
 
 .pokeimgbox img {
   max-width: 500px;
-
 }
 
 .pokestatsbox {
@@ -154,6 +150,9 @@ body {
   border-radius: 5px 20px 5px;
   position: relative;
   z-index: 5;
+  font-family: 'Tillana', cursive;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .pokestatsbox h1 {
@@ -167,6 +166,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px 0px 0px 20px;
+  font-family: 'Tillana', cursive;
+  font-weight: bold;
 }
 
 .aa {
@@ -219,7 +220,6 @@ body {
 
 .revealed {
   transition: opacity;
-
   transition-duration: 3.5s;
   opacity: .9;
 }
@@ -230,12 +230,12 @@ body {
 }
 
 #bgVid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 1;
 }
 
 @keyframes bounce {
