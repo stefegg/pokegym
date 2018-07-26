@@ -63,8 +63,8 @@ class Trainer {
 
 stefOne = new Stefpokemon(160);
 stefTwo = new Stefpokemon(693);
-stefThree = new Stefpokemon(230);
-stefFour = new Stefpokemon(319);
+stefThree = new Stefpokemon(319);
+stefFour = new Stefpokemon(321);
 stefFive = new Stefpokemon(565);
 stefSix = new Stefpokemon(224);
 
@@ -200,13 +200,13 @@ function sPkmn2(){
 
 function sPkmn3(){
   stefChooseyou(2);
-  document.getElementById('stefpokePic').src ="images/230.png";
+  document.getElementById('stefpokePic').src ="images/319.png";
 
 };
 
 function sPkmn4(){
   stefChooseyou(3);
-  document.getElementById('stefpokePic').src ="images/319.png";
+  document.getElementById('stefpokePic').src ="images/321.png";
 };
 
 function sPkmn5(){

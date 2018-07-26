@@ -1,7 +1,7 @@
 body {
   width: 100%;
-  background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.7), black), url("http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg");
-  background-attachment: fixed;
+  /* background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.7), black), url("http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg"); */
+  /* background-attachment: fixed; */
   color: white;
   font-family: 'ABeeZee', sans-serif;
 }
@@ -102,12 +102,21 @@ h1 {
 .revealed {
   transition: opacity;
   transition-duration: 2s;
-  opacity: 1;
+  opacity: .9;
 }
 
 .pokeball {
   animation: bounce 1.5s;
   animation-iteration-count: infinite;
+}
+
+#bgVid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
 }
 
 @keyframes bounce {
