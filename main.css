@@ -6,6 +6,10 @@ body {
   font-family: 'ABeeZee', sans-serif;
 }
 
+h1 {
+  font-family: 'Trade Winds', cursive;
+}
+
 .banner {
   height: 200px;
   background-image: url("images/gyrados-banner.png");
@@ -49,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Tillana', cursive;
 }
 
 .pokestatsbox {
