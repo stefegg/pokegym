@@ -22,7 +22,7 @@ function dramaticReveal(scroll_pos) {
     revealContent()
   }
 
-  if (scroll_pos >= 550) {
+  if (scroll_pos >= 600) {
     function revealContent2() {
       content = document.getElementById('trainer2');
       content.classList.remove('hidden');
@@ -32,7 +32,7 @@ function dramaticReveal(scroll_pos) {
     revealContent2()
   }
 
-  if (scroll_pos > 1150) {
+  if (scroll_pos > 1500) {
     function revealContent3() {
       content = document.getElementById('trainer3');
       content.classList.remove('hidden');
